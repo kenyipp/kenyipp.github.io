@@ -8,7 +8,6 @@ import {
 	TimelineSeparator,
 	timelineOppositeContentClasses
 } from "@mui/lab";
-import { useTheme } from "@mui/material";
 import {
 	Avatar,
 	Box,
@@ -19,7 +18,8 @@ import {
 	ListItemText,
 	Stack,
 	Typography,
-	useMediaQuery
+	useMediaQuery,
+	useTheme
 } from "@mui/material";
 
 import { PageSection } from "../PageSection";
