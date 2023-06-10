@@ -2,7 +2,6 @@ import { CssBaseline } from "@mui/material";
 import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import "simplebar-react/dist/simplebar.min.css";
 
 import { Provider } from "../components/Provider";
 

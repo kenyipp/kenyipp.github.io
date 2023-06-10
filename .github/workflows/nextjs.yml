@@ -15,9 +15,42 @@ concurrency:
     cancel-in-progress: false
 
 jobs:
+    QualityCheck:
+        name: Check Code Quality
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            - name: Setup Node
+              uses: actions/setup-node@v3
+              with:
+                  node-version: "16"
+                  cache: yarn
+            - name: Restore cache
+              uses: actions/cache@v3
+              with:
+                  path: |
+                      .next/cache
+                  key:
+                      ${{ runner.os }}-nextjs-${{
+                      hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{
+                      hashFiles('**.[jt]s', '**.[jt]sx') }}
+                  restore-keys: |
+                      ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+            - name: Install dependencies
+              run: yarn install
+            - name: Linting
+              run: npm run lint
+            - name: Spell Check
+              run: npm run spell-check
+            - name: Type Checking
+              run: npm run check-types
+
     # Build job
     Build:
+        name: Build Next.js Application
         runs-on: ubuntu-latest
+        needs: ["QualityCheck"]
         steps:
             - name: Checkout
               uses: actions/checkout@v3
@@ -44,5 +77,5 @@ jobs:
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@v4
               with:
-                folder: build
-                token: ${{ secrets.DEPLOY_TOKEN }}
+                  folder: build
+                  token: ${{ secrets.DEPLOY_TOKEN }}
