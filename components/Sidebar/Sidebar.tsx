@@ -101,7 +101,10 @@ export const Sidebar = ({ onSidebarItemClick }: SidebarProps) => {
 				<IconButton href="https://github.com/kenyipp" target="_blank">
 					<GitHub fontSize="small" />
 				</IconButton>
-				<IconButton href="https://www.linkedin.com/" target="_blank">
+				<IconButton
+					href="https://www.linkedin.com/in/yip-ken-70723413b"
+					target="_blank"
+				>
 					<LinkedIn fontSize="small" />
 				</IconButton>
 				<IconButton href="https://twitter.com/kenyipcc" target="_blank">
