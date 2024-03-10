@@ -13,5 +13,5 @@ export const theme = createMuiTheme({
 	palette,
 	shadows,
 	shape,
-	typography
+	typography,
 });

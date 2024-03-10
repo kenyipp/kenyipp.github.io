@@ -29,15 +29,15 @@ export default function App({ Component, pageProps }: AppProps) {
 							url: "https://kenyipp.github.io/favicon.svg",
 							width: 512,
 							height: 512,
-							alt: "Ken Yip"
-						}
+							alt: "Ken Yip",
+						},
 					],
 					profile: {
 						firstName: "Ken",
 						lastName: "Yip",
 						username: "Ken Yip",
-						gender: "male"
-					}
+						gender: "male",
+					},
 				}}
 			/>
 			<SocialProfileJsonLd
@@ -49,7 +49,7 @@ export default function App({ Component, pageProps }: AppProps) {
 					"https://github.com/kenyipp",
 					"https://www.instagram.com/ken2027",
 					"https://www.linkedin.com/in/yip-ken-70723413b",
-					"https://twitter.com/kenyipcc"
+					"https://twitter.com/kenyipcc",
 				]}
 			/>
 			<Provider>

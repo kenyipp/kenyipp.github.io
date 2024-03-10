@@ -1,4 +1,4 @@
-import { SxProps, useTheme } from "@mui/material";
+import { type SxProps, useTheme } from "@mui/material";
 
 const IconSize = 100;
 
@@ -9,7 +9,7 @@ export const useStyles = () => {
 		width: "280px",
 		backgroundColor: theme.palette.background.paper,
 		border: 0,
-		boxShadow: theme.shadows[1]
+		boxShadow: theme.shadows[1],
 	};
 
 	const siteTitleBlock: SxProps = {
@@ -17,16 +17,16 @@ export const useStyles = () => {
 		flexDirection: "column",
 		alignItems: "center",
 		mt: 4,
-		mb: 4
+		mb: 4,
 	};
 
 	const siteTitle: SxProps = {
 		fontSize: "2rem",
-		mb: 1
+		mb: 1,
 	};
 
 	const siteSubtitle: SxProps = {
-		fontSize: "0.9rem"
+		fontSize: "0.9rem",
 	};
 
 	const list: SxProps = {
@@ -36,8 +36,8 @@ export const useStyles = () => {
 		textAlign: "center",
 		transition: "all 0.3s",
 		"& > li": {
-			marginTop: "0 !important"
-		}
+			marginTop: "0 !important",
+		},
 	};
 
 	const listItem: SxProps = {
@@ -46,8 +46,8 @@ export const useStyles = () => {
 		padding: 1,
 		transition: "background-color 0.3s ease-in-out",
 		"&:hover": {
-			backgroundColor: "#333"
-		}
+			backgroundColor: "#333",
+		},
 	};
 
 	const listItemActive: SxProps = {
@@ -55,18 +55,18 @@ export const useStyles = () => {
 		width: "100%",
 		padding: 1,
 		backgroundColor: "#333",
-		borderRight: "2px solid #ffcd38"
+		borderRight: "2px solid #ffcd38",
 	};
 
 	const listItemText: SxProps = {
 		fontSize: "0.9rem",
-		fontWeight: 500
+		fontWeight: 500,
 	};
 
 	const avatar: SxProps = {
 		width: IconSize,
 		height: IconSize,
-		marginBottom: 2
+		marginBottom: 2,
 	};
 
 	return {
@@ -78,6 +78,6 @@ export const useStyles = () => {
 		listItem,
 		listItemActive,
 		listItemText,
-		avatar
+		avatar,
 	};
 };

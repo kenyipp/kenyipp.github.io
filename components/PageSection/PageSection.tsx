@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 
 import { useStyles } from "./styles";
-import { PageSectionProps } from "./types";
+import type { PageSectionProps } from "./types";
 
 export function PageSection({ tag, title, children }: PageSectionProps) {
 	const styles = useStyles();

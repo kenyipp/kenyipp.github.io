@@ -1,18 +1,18 @@
 export const useSidebarContent = () => [
 	{
 		tag: "about-me",
-		title: "About Me"
+		title: "About Me",
 	},
 	{
 		tag: "projects",
-		title: "Side Projects"
+		title: "Side Projects",
 	},
 	{
 		tag: "working-experience",
-		title: "Working Experience"
+		title: "Working Experience",
 	},
 	{
 		tag: "education-award",
-		title: "Education & Awards"
-	}
+		title: "Education & Awards",
+	},
 ];

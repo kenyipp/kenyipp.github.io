@@ -29,12 +29,12 @@ function ProjectDiscuz() {
 				</Link>
 			</Typography>
 			<br />
-			This repository represents a Rust-based backend implementation for a
-			forum program, drawing inspiration from platforms such as Reddit.
-			Its development took place during my Rust programming language
-			studies. The primary motivation behind creating this repository was
-			the observation that existing Rust repositories on GitHub either
-			lacked certain functionalities or were not kept up-to-date.
+			This repository represents a Rust-based backend implementation for a forum
+			program, drawing inspiration from platforms such as Reddit. Its
+			development took place during my Rust programming language studies. The
+			primary motivation behind creating this repository was the observation
+			that existing Rust repositories on GitHub either lacked certain
+			functionalities or were not kept up-to-date.
 			<br />
 			<br />
 			Similar to my other repository, I have implemented{" "}
@@ -70,10 +70,10 @@ function ProjectDiscuz() {
 			Additionally, the server is launched and tested using Newsman.
 			<br />
 			<br />
-			To maintain a clean and well-organized codebase, the repository
-			strictly adheres to the repository design pattern. It follows a
-			monorepo structure, enabling efficient management and collaborative
-			efforts across various components of the forum program.
+			To maintain a clean and well-organized codebase, the repository strictly
+			adheres to the repository design pattern. It follows a monorepo structure,
+			enabling efficient management and collaborative efforts across various
+			components of the forum program.
 			<br />
 			<br />
 			Actix-web has been employed as the server framework, error-stack for
@@ -99,13 +99,10 @@ function ProjectRealWorld() {
 				</Link>
 			</Typography>
 			<br />
-			This repository serves as a demonstration of my programming skills
-			and showcases my expertise in software development. Developed in
-			adherence to the{" "}
-			<Link
-				href="https://github.com/gothinkster/realworld"
-				target="_blank"
-			>
+			This repository serves as a demonstration of my programming skills and
+			showcases my expertise in software development. Developed in adherence to
+			the{" "}
+			<Link href="https://github.com/gothinkster/realworld" target="_blank">
 				RealWorld
 			</Link>{" "}
 			API spec, it has earned recognition from the{" "}
@@ -122,9 +119,9 @@ function ProjectRealWorld() {
 			.
 			<br />
 			<br />
-			The project is built using TypeScript, Express.js, and Knex, forming
-			a robust and reliable foundation. To ensure the stability of the
-			codebase, I have created an extensive suite of{" "}
+			The project is built using TypeScript, Express.js, and Knex, forming a
+			robust and reliable foundation. To ensure the stability of the codebase, I
+			have created an extensive suite of{" "}
 			<Link
 				href="https://github.com/kenyipp/realworld-nodejs-example-app/tree/master/packages/core/test"
 				target="_blank"
@@ -150,9 +147,9 @@ function ProjectRealWorld() {
 			<br />
 			<br />
 			In my pursuit of continuous improvement, I actively explore new
-			technologies and incorporate them into this project. Consequently,
-			the repository is regularly updated with the latest features,
-			optimizations, and industry best practices.
+			technologies and incorporate them into this project. Consequently, the
+			repository is regularly updated with the latest features, optimizations,
+			and industry best practices.
 			<br />
 			<br />
 			To uphold high code quality standards, I have established a{" "}
@@ -162,9 +159,8 @@ function ProjectRealWorld() {
 			>
 				GitHub Actions pipeline
 			</Link>
-			. This pipeline automates code quality checks and enforces a
-			stringent code coverage policy. It encompasses various types of
-			tests, including{" "}
+			. This pipeline automates code quality checks and enforces a stringent
+			code coverage policy. It encompasses various types of tests, including{" "}
 			<Link
 				href="https://github.com/kenyipp/realworld-nodejs-example-app/tree/master/packages/core/test"
 				target="_blank"
@@ -185,10 +181,9 @@ function ProjectRealWorld() {
 			>
 				end-to-end tests
 			</Link>
-			, linting, and database migration tests. Every pull request or
-			commit must attain a minimum code coverage of 90%, ensuring thorough
-			testing of the application. The resulting code coverage report is
-			then uploaded to{" "}
+			, linting, and database migration tests. Every pull request or commit must
+			attain a minimum code coverage of 90%, ensuring thorough testing of the
+			application. The resulting code coverage report is then uploaded to{" "}
 			<Link
 				href="https://app.codecov.io/gh/kenyipp/realworld-nodejs-example-app"
 				target="_blank"
@@ -199,11 +194,10 @@ function ProjectRealWorld() {
 			improvement.
 			<br />
 			<br />
-			By leveraging industry-standard tools, adhering to best practices,
-			and maintaining an unwavering commitment to continuous improvement,
-			this repository not only demonstrates my programming skills but also
-			reflects my dedication to delivering high-quality and maintainable
-			code.
+			By leveraging industry-standard tools, adhering to best practices, and
+			maintaining an unwavering commitment to continuous improvement, this
+			repository not only demonstrates my programming skills but also reflects
+			my dedication to delivering high-quality and maintainable code.
 		</Box>
 	);
 }

@@ -1,4 +1,4 @@
-import { SxProps, useTheme } from "@mui/material";
+import { type SxProps, useTheme } from "@mui/material";
 import { alpha } from "@mui/material/styles";
 
 export const useStyles = () => {
@@ -11,17 +11,17 @@ export const useStyles = () => {
 		backgroundColor: alpha(theme.palette.background.paper, 0.8),
 		boxShadow: theme.shadows[1],
 		[`@media (max-width: ${theme.breakpoints.values.md}px)`]: {
-			display: "block"
-		}
+			display: "block",
+		},
 	};
 
 	const content: SxProps = {
 		minHeight: 64,
-		px: 2
+		px: 2,
 	};
 
 	return {
 		container,
-		content
+		content,
 	};
 };

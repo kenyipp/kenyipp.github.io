@@ -1,5 +1,5 @@
-import { ShapeOptions } from "@mui/system";
+import type { ShapeOptions } from "@mui/system";
 
 export const shape: ShapeOptions = {
-	borderRadius: 2
+	borderRadius: 2,
 };

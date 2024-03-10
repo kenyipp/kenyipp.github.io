@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 
 import { useStyles } from "./styles";
-import { PageSubtitleProps } from "./types";
+import type { PageSubtitleProps } from "./types";
 
 export function PageSubtitle({ title }: PageSubtitleProps) {
 	const styles = useStyles();

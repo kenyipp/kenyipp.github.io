@@ -6,7 +6,7 @@ import {
 	TimelineItem,
 	TimelineOppositeContent,
 	TimelineSeparator,
-	timelineOppositeContentClasses
+	timelineOppositeContentClasses,
 } from "@mui/lab";
 import { Link, List, ListItem, ListItemText, Typography } from "@mui/material";
 import moment from "moment";
@@ -21,29 +21,27 @@ export function WorkingExperience() {
 			<Timeline
 				sx={{
 					[`& .${timelineOppositeContentClasses.root}`]: {
-						flex: 0.3
-					}
+						flex: 0.3,
+					},
 				}}
 			>
 				{items.map((workExperience, index) => {
 					const from = moment(workExperience.from, "YYYY-MM").format(
-						"MMMM YYYY"
+						"MMMM YYYY",
 					);
 					const to = workExperience.to
-						? moment(workExperience.to, "YYYY-MM").format(
-								"MMMM YYYY"
-						  )
+						? moment(workExperience.to, "YYYY-MM").format("MMMM YYYY")
 						: "Present";
 					const duration = moment.duration(
 						(workExperience.to
 							? moment(workExperience.to, "YYYY-MM")
 							: moment()
-						).diff(moment(workExperience.from, "YYYY-MM"))
+						).diff(moment(workExperience.from, "YYYY-MM")),
 					);
 					const durationYears = duration.years();
 					const durationMonths = duration.months();
 					return (
-						<TimelineItem key={index}>
+						<TimelineItem key={workExperience.company}>
 							<TimelineOppositeContent>
 								<Typography
 									component={Link}
@@ -58,15 +56,12 @@ export function WorkingExperience() {
 									{from} - {to}
 								</Typography>
 								<Typography color="text.secondary">
-									{durationYears > 0 &&
-										`${durationYears} years `}
+									{durationYears > 0 && `${durationYears} years `}
 									{durationMonths} months
 								</Typography>
 							</TimelineOppositeContent>
 							<TimelineSeparator>
-								<TimelineDot
-									color={index === 0 ? "success" : "info"}
-								/>
+								<TimelineDot color={index === 0 ? "success" : "info"} />
 								<TimelineConnector />
 							</TimelineSeparator>
 							<TimelineContent>
@@ -74,19 +69,15 @@ export function WorkingExperience() {
 									{workExperience.title}
 								</Typography>
 								<List>
-									{workExperience.descriptions.map(
-										(description, index) => (
-											<ListItem key={index}>
-												<ListItemText
-													primary={description}
-												/>
-											</ListItem>
-										)
-									)}
+									{workExperience.descriptions.map((description) => (
+										<ListItem key={description}>
+											<ListItemText primary={description} />
+										</ListItem>
+									))}
 									<ListItem>
 										<ListItemText
 											primary={`Tech stack: ${workExperience.techStacks.join(
-												", "
+												", ",
 											)}`}
 										/>
 									</ListItem>

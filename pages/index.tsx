@@ -17,26 +17,24 @@ const Page: NextPage = () => {
 	const router = useRouter();
 
 	useEffect(() => {
-		const { tag } = router.query;
+		const tag = router.query.tag;
 		if (!tag) {
 			router.push(
 				{ pathname: router.pathname, query: { tag: "about-me" } },
 				undefined,
 				{
-					shallow: true
-				}
+					shallow: true,
+				},
 			);
 		}
-	}, []);
+	}, [router]);
 
 	return (
 		<Box sx={styles.container}>
 			<TopNavbar />
 			<Sidebar
 				onSidebarItemClick={({ tag }) => {
-					document
-						.getElementById(tag)
-						?.scrollIntoView({ behavior: "smooth" });
+					document.getElementById(tag)?.scrollIntoView({ behavior: "smooth" });
 				}}
 			/>
 			<Box

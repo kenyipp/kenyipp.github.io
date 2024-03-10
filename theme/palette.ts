@@ -1,5 +1,4 @@
-import { common } from "@mui/material/colors";
-import { PaletteOptions, alpha } from "@mui/material/styles";
+import { type PaletteOptions, alpha } from "@mui/material/styles";
 
 import { error, indigo, info, neutral, success, warning } from "./colors";
 
@@ -12,11 +11,11 @@ export const palette: PaletteOptions = {
 		disabledBackground: alpha(neutral[900], 0.12),
 		focus: alpha(neutral[900], 0.16),
 		hover: alpha(neutral[900], 0.04),
-		selected: alpha(neutral[900], 0.12)
+		selected: alpha(neutral[900], 0.12),
 	},
 	background: {
 		default: "#000",
-		paper: "rgba(34, 34, 34, 1)"
+		paper: "rgba(34, 34, 34, 1)",
 	},
 	divider: "#333",
 	error,
@@ -27,5 +26,5 @@ export const palette: PaletteOptions = {
 		// secondary: neutral[500],
 		// disabled: alpha(neutral[900], 0.38)
 	},
-	warning
+	warning,
 };

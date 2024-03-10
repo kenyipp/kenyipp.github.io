@@ -7,13 +7,13 @@ const nextConfig = {
 	webpack(config) {
 		config.plugins.push(
 			new LodashModuleReplacementPlugin(),
-			new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /(en)/)
+			new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /(en)/),
 		);
 		return config;
 	},
 	reactStrictMode: true,
 	swcMinify: true,
-	distDir: "build"
+	distDir: "build",
 };
 
 module.exports = nextConfig;

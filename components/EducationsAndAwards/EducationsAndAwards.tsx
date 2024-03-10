@@ -6,7 +6,7 @@ import {
 	TimelineItem,
 	TimelineOppositeContent,
 	TimelineSeparator,
-	timelineOppositeContentClasses
+	timelineOppositeContentClasses,
 } from "@mui/lab";
 import {
 	Avatar,
@@ -19,7 +19,7 @@ import {
 	Stack,
 	Typography,
 	useMediaQuery,
-	useTheme
+	useTheme,
 } from "@mui/material";
 
 import { PageSection } from "../PageSection";
@@ -28,7 +28,7 @@ import { PageSubtitle } from "../PageSubtitle";
 export function EducationsAndAwards() {
 	const theme = useTheme();
 	const isLargeScreenOrAbove = useMediaQuery(theme.breakpoints.up("md"), {
-		defaultMatches: true
+		defaultMatches: true,
 	});
 	return (
 		<PageSection title="Educations And Awards" tag="education-award">
@@ -38,8 +38,8 @@ export function EducationsAndAwards() {
 					<Timeline
 						sx={{
 							[`& .${timelineOppositeContentClasses.root}`]: {
-								flex: 0.3
-							}
+								flex: 0.3,
+							},
 						}}
 					>
 						<TimelineItem>
@@ -62,13 +62,8 @@ export function EducationsAndAwards() {
 								<TimelineConnector />
 							</TimelineSeparator>
 							<TimelineContent>
-								<Typography
-									variant="h6"
-									component="h6"
-									sx={{ mb: 1 }}
-								>
-									Bachelor of Engineering in Information
-									Engineering
+								<Typography variant="h6" component="h6" sx={{ mb: 1 }}>
+									Bachelor of Engineering in Information Engineering
 								</Typography>
 								<Typography variant="body2" component="p">
 									Second Class Honours, Upper Division
@@ -85,10 +80,7 @@ export function EducationsAndAwards() {
 					>
 						<ListItem>
 							<ListItemIcon>
-								<Avatar
-									alt="Amazon Web Services"
-									src="/amazon.jpg"
-								/>
+								<Avatar alt="Amazon Web Services" src="/amazon.jpg" />
 							</ListItemIcon>
 							<ListItemText
 								primary="AWS Certified Solutions Architect - Associate"

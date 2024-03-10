@@ -1,6 +1,6 @@
-import { PropsWithChildren, createContext, useState } from "react";
+import { type PropsWithChildren, createContext, useState } from "react";
 
-import { AppContextProps } from "./types";
+import type { AppContextProps } from "./types";
 
 export const AppContext = createContext<AppContextProps>({
 	isSidebarOpen: false,
@@ -9,10 +9,10 @@ export const AppContext = createContext<AppContextProps>({
 	},
 	toggleSidebar() {
 		throw new Error("No AppContextProvider was detected");
-	}
+	},
 });
 
-export const AppContextProvider = ({ children }: PropsWithChildren<{}>) => {
+export const AppContextProvider = ({ children }: PropsWithChildren<any>) => {
 	const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
 	const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 	const closeSidebar = () => setIsSidebarOpen(false);
@@ -21,7 +21,7 @@ export const AppContextProvider = ({ children }: PropsWithChildren<{}>) => {
 			value={{
 				isSidebarOpen,
 				toggleSidebar,
-				closeSidebar
+				closeSidebar,
 			}}
 		>
 			{children}

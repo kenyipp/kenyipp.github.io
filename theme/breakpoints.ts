@@ -1,4 +1,4 @@
-import { BreakpointsOptions } from "@mui/system";
+import type { BreakpointsOptions } from "@mui/system";
 
 export const breakpoints: BreakpointsOptions = {
 	values: {
@@ -6,6 +6,6 @@ export const breakpoints: BreakpointsOptions = {
 		sm: 576,
 		md: 768,
 		lg: 992,
-		xl: 1200
-	}
+		xl: 1200,
+	},
 };

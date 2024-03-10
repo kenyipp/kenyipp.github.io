@@ -1,4 +1,8 @@
-import { ThemeOptions, inputLabelClasses, paperClasses } from "@mui/material";
+import {
+	type ThemeOptions,
+	inputLabelClasses,
+	paperClasses,
+} from "@mui/material";
 
 import { neutral } from "./colors";
 import { palette } from "./palette";
@@ -9,17 +13,17 @@ export const components: ThemeOptions["components"] = {
 			root: {
 				fontSize: 14,
 				fontWeight: 600,
-				letterSpacing: 0
-			}
-		}
+				letterSpacing: 0,
+			},
+		},
 	},
 	MuiButton: {
 		styleOverrides: {
 			root: {
 				borderRadius: "3px",
-				textTransform: "none"
-			}
-		}
+				textTransform: "none",
+			},
+		},
 	},
 	MuiCard: {
 		styleOverrides: {
@@ -27,45 +31,45 @@ export const components: ThemeOptions["components"] = {
 				borderRadius: 2,
 				[`&.${paperClasses.elevation1}`]: {
 					boxShadow:
-						"0px 5px 22px rgba(0, 0, 0, 0.04), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.03)"
-				}
-			}
-		}
+						"0px 5px 22px rgba(0, 0, 0, 0.04), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.03)",
+				},
+			},
+		},
 	},
 	MuiCardContent: {
 		styleOverrides: {
 			root: {
 				padding: "12px 24px",
 				"&:last-child": {
-					paddingBottom: "32px"
-				}
-			}
-		}
+					paddingBottom: "32px",
+				},
+			},
+		},
 	},
 	MuiCardHeader: {
 		defaultProps: {
 			titleTypographyProps: {
-				variant: "h6"
+				variant: "h6",
 			},
 			subheaderTypographyProps: {
 				variant: "body2",
-				marginTop: 1
-			}
+				marginTop: 1,
+			},
 		},
 		styleOverrides: {
 			root: {
-				padding: "24px"
-			}
-		}
+				padding: "24px",
+			},
+		},
 	},
 	MuiInputBase: {
 		styleOverrides: {
 			input: {
 				"&::placeholder": {
-					opacity: 1
-				}
-			}
-		}
+					opacity: 1,
+				},
+			},
+		},
 	},
 	MuiFormLabel: {
 		styleOverrides: {
@@ -73,21 +77,21 @@ export const components: ThemeOptions["components"] = {
 				fontSize: 14,
 				fontWeight: 500,
 				[`&.${inputLabelClasses.filled}`]: {
-					transform: "translate(12px, 18px) scale(1)"
+					transform: "translate(12px, 18px) scale(1)",
 				},
 				[`&.${inputLabelClasses.shrink}`]: {
 					[`&.${inputLabelClasses.standard}`]: {
-						transform: "translate(0, -1.5px) scale(0.85)"
+						transform: "translate(0, -1.5px) scale(0.85)",
 					},
 					[`&.${inputLabelClasses.filled}`]: {
-						transform: "translate(12px, 6px) scale(0.85)"
+						transform: "translate(12px, 6px) scale(0.85)",
 					},
 					[`&.${inputLabelClasses.outlined}`]: {
-						transform: "translate(14px, -9px) scale(0.85)"
-					}
-				}
-			}
-		}
+						transform: "translate(14px, -9px) scale(0.85)",
+					},
+				},
+			},
+		},
 	},
 	MuiTab: {
 		styleOverrides: {
@@ -100,23 +104,23 @@ export const components: ThemeOptions["components"] = {
 				paddingRight: 0,
 				textTransform: "none",
 				"& + &": {
-					marginLeft: 24
-				}
-			}
-		}
+					marginLeft: 24,
+				},
+			},
+		},
 	},
 	MuiTableCell: {
 		styleOverrides: {
 			root: {
 				wordBreak: "break-all",
-				borderBottomColor: palette.divider
-			}
-		}
+				borderBottomColor: palette.divider,
+			},
+		},
 	},
 	MuiTextField: {
 		defaultProps: {
-			variant: "filled"
-		}
+			variant: "filled",
+		},
 	},
 	MuiFilledInput: {
 		styleOverrides: {
@@ -126,28 +130,28 @@ export const components: ThemeOptions["components"] = {
 				borderWidth: 1,
 				borderColor: neutral[200],
 				"&:hover": {
-					backgroundColor: palette.action?.hover
+					backgroundColor: palette.action?.hover,
 				},
 				"&:before": {
-					display: "none"
+					display: "none",
 				},
 				"&:after": {
-					display: "none"
-				}
-			}
-		}
+					display: "none",
+				},
+			},
+		},
 	},
 	MuiLink: {
 		styleOverrides: {
 			root: {
-				textDecoration: "none"
-			}
-		}
+				textDecoration: "none",
+			},
+		},
 	},
 	MuiCssBaseline: {
 		styleOverrides: {
 			"*": {
-				boxSizing: "border-box"
+				boxSizing: "border-box",
 			},
 			html: {
 				MozOsxFontSmoothing: "grayscale",
@@ -156,7 +160,7 @@ export const components: ThemeOptions["components"] = {
 				flexDirection: "column",
 				height: "100%",
 				minHeight: "100%",
-				width: "100%"
+				width: "100%",
 			},
 			body: {
 				display: "flex",
@@ -164,15 +168,15 @@ export const components: ThemeOptions["components"] = {
 				flexDirection: "column",
 				height: "100%",
 				minHeight: "100%",
-				width: "100%"
+				width: "100%",
 			},
 			"#__next": {
 				display: "flex",
 				flex: "1 1 auto",
 				flexDirection: "column",
 				height: "100%",
-				width: "100%"
-			}
-		}
-	}
+				width: "100%",
+			},
+		},
+	},
 };

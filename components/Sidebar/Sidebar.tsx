@@ -8,14 +8,14 @@ import {
 	Drawer,
 	IconButton,
 	Typography,
-	useMediaQuery
+	useMediaQuery,
 } from "@mui/material";
 import { Stack, useTheme } from "@mui/system";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
 
 import { useStyles } from "./styles";
-import { SidebarProps } from "./types";
+import type { SidebarProps } from "./types";
 import { useSidebarContent } from "./utils";
 
 export const Sidebar = ({ onSidebarItemClick }: SidebarProps) => {
@@ -26,12 +26,12 @@ export const Sidebar = ({ onSidebarItemClick }: SidebarProps) => {
 	const { isSidebarOpen, closeSidebar } = useAppContext();
 
 	const isLargeScreenOrAbove = useMediaQuery(theme.breakpoints.up("md"), {
-		defaultMatches: true
+		defaultMatches: true,
 	});
 
 	const onButtonClick = async ({ tag }: { tag: string }) => {
 		router.push({ pathname: router.pathname, query: { tag } }, undefined, {
-			shallow: true
+			shallow: true,
 		});
 		onSidebarItemClick({ tag });
 	};
@@ -43,11 +43,8 @@ export const Sidebar = ({ onSidebarItemClick }: SidebarProps) => {
 			sx={{
 				display: "block",
 				[`@media (max-width: ${theme.breakpoints.values.md}px)`]: {
-					display:
-						typeof window === "undefined"
-							? "none !important"
-							: "block"
-				}
+					display: typeof window === "undefined" ? "none !important" : "block",
+				},
 			}}
 			variant={isLargeScreenOrAbove ? "permanent" : "temporary"}
 			PaperProps={{ sx: styles.paper }}
@@ -66,8 +63,8 @@ export const Sidebar = ({ onSidebarItemClick }: SidebarProps) => {
 				<li>
 					<Divider />
 				</li>
-				{items.map((item, index) => (
-					<Fragment key={index}>
+				{items.map((item) => (
+					<Fragment key={item.tag}>
 						<li>
 							<ButtonBase
 								sx={
@@ -77,10 +74,7 @@ export const Sidebar = ({ onSidebarItemClick }: SidebarProps) => {
 								}
 								onClick={() => onButtonClick({ tag: item.tag })}
 							>
-								<Typography
-									component="span"
-									sx={styles.listItemText}
-								>
+								<Typography component="span" sx={styles.listItemText}>
 									{item.title}
 								</Typography>
 							</ButtonBase>
@@ -110,10 +104,7 @@ export const Sidebar = ({ onSidebarItemClick }: SidebarProps) => {
 				<IconButton href="https://twitter.com/kenyipcc" target="_blank">
 					<Twitter fontSize="small" />
 				</IconButton>
-				<IconButton
-					href="https://www.facebook.com/ken2026"
-					target="_blank"
-				>
+				<IconButton href="https://www.facebook.com/ken2026" target="_blank">
 					<Facebook fontSize="small" />
 				</IconButton>
 				<IconButton href="mailto:ken20206@gmail.com" target="_blank">
