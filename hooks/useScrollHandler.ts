@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 export const useScrollHandler = () => {
 	const tags = [
 		"about-me",
-		"projects",
 		"working-experience",
+		"projects",
 		"education-award",
 	];
 
