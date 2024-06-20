@@ -26,3 +26,6 @@ Juvo
 Mindlayer
 chatbots
 Appslab
+Mogo
+Bitrise
+

@@ -7,7 +7,7 @@
 		"check-types": "tsc --skipLibCheck --noEmit",
 		"dev": "next dev",
 		"lint": "biome lint ./",
-		"lint:fix": "biome check --apply ./",
+		"lint:fix": "biome check --write ./",
 		"spell-check": "cspell \"**\" --no-progress",
 		"start": "next start"
 	},
@@ -28,7 +28,7 @@
 		"react-type-animation": "^3.0.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.6.0",
+		"@biomejs/biome": "^1.8.1",
 		"@types/lodash": "^4.14.195",
 		"@types/node": "20.2.5",
 		"@types/react": "18.2.9",

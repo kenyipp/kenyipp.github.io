@@ -1,10 +1,38 @@
 export const useWorkingExperience = () => [
 	{
+		title: "Senior Software Engineer",
+		company: "Mogo Finance Technology Inc.",
+		website: "https://www.mogo.ca",
+		from: "2023-07",
+		to: null,
+		descriptions: [
+			"Collaborated on the migration of legacy server APIs to a modern server repository",
+			"Enhanced and modernized the existing React Native application through refactoring and upgrading efforts",
+			"Developed comprehensive test cases for both the frontend and backend components to achieve the desired code coverage level",
+			"Gather requirements from various stakeholders to develop multiple programs aimed at enhancing workflow efficiency and minimizing the occurrence of manual errors",
+		],
+		techStacks: [
+			"Node.js",
+			"React.js",
+			"Next.js",
+			"Typescript",
+			"React Native",
+			"Bitrise",
+			"Sentry",
+			"DataDog",
+			"MongoDB",
+			"CI/CD",
+			"AWS Lambda",
+			"AWS Services",
+			"Agile Methodology",
+		],
+	},
+	{
 		title: "Full Stack Developer",
 		company: "Atimi Software",
 		website: "https://www.atimi.com",
 		from: "2022-08",
-		to: null,
+		to: "2023-07",
 		descriptions: [
 			"Designed and developed the server for a job matching app and optimized the financial trading app.",
 			"Identified and resolved bugs in the existing codebase, and created comprehensive project documentation, including database and architectural structures, to hand over to the client.",
@@ -14,6 +42,7 @@ export const useWorkingExperience = () => [
 		techStacks: [
 			"Node.js",
 			"React.js",
+			"Next.js",
 			"Typescript",
 			"React Native",
 			"MySql",

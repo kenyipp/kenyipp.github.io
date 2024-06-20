@@ -4,12 +4,12 @@ export const useSidebarContent = () => [
 		title: "About Me",
 	},
 	{
-		tag: "projects",
-		title: "Side Projects",
-	},
-	{
 		tag: "working-experience",
 		title: "Working Experience",
+	},
+	{
+		tag: "projects",
+		title: "Side Projects",
 	},
 	{
 		tag: "education-award",

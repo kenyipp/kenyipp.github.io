@@ -43,8 +43,8 @@ const Page: NextPage = () => {
 				onScroll={() => onMainContentScroll()}
 			>
 				<AboutMe />
-				<Projects />
 				<WorkingExperience />
+				<Projects />
 				<EducationsAndAwards />
 			</Box>
 		</Box>

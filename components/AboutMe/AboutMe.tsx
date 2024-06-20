@@ -7,12 +7,12 @@ export function AboutMe() {
 		<PageSection tag="about-me" title="About Me">
 			<Box>
 				<Typography component="h2" variant="h4">
-					I am a Full Stack Developer @ Atimi Software
+					I am a Full Stack Developer @ Mogo Finance Technology Inc.
 				</Typography>
 				<br />
-				With nearly six years of experience as a seasoned full-stack developer,
-				I have consistently crafted resilient, scalable, and optimized systems
-				by employing clean, maintainable, and testable code. have consistently
+				With nearly 7 years of experience as a seasoned full-stack developer, I
+				have consistently crafted resilient, scalable, and optimized systems by
+				employing clean, maintainable, and testable code. have consistently
 				developed robust, scalable, and efficient systems using clean,
 				maintainable, and testable code.
 				<br />
