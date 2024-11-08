@@ -28,4 +28,4 @@ chatbots
 Appslab
 Mogo
 Bitrise
-
+fintech

@@ -119,31 +119,32 @@ function ProjectRealWorld() {
 			.
 			<br />
 			<br />
-			The project is built using TypeScript, Express.js, and Knex, forming a
-			robust and reliable foundation. To ensure the stability of the codebase, I
-			have created an extensive suite of{" "}
+			The project is developed with TypeScript, Express.js, and Knex, creating a
+			robust and reliable foundation. To maintain codebase stability, I
+			implemented a comprehensive suite of
 			<Link
-				href="https://github.com/kenyipp/realworld-nodejs-example-app/tree/master/packages/core/test"
+				href="https://github.com/kenyipp/realworld-nodejs-example-app/tree/develop/packages/core/tests"
 				target="_blank"
 			>
 				unit tests
 			</Link>{" "}
 			and{" "}
 			<Link
-				href="https://github.com/kenyipp/realworld-nodejs-example-app/tree/master/apps/server/test/integration"
+				href="https://github.com/kenyipp/realworld-nodejs-example-app/tree/develop/apps/article/tests"
 				target="_blank"
 			>
 				integration tests
-			</Link>
-			. These tests validate the functionality of existing features and
-			safeguard against regressions when introducing new ones. Leveraging{" "}
+			</Link>{" "}
+			that validate feature functionality and help prevent regressions when
+			introducing new features. The application is deployed using AWS Lambda and
+			API Gateway, leveraging
 			<Link
-				href="https://github.com/kenyipp/realworld-nodejs-example-app/blob/master/template.yaml"
+				href="https://github.com/kenyipp/realworld-nodejs-example-app-infra"
 				target="_blank"
 			>
-				Amazon SAM
+				CDK for infrastructure as code
 			</Link>
-			, the application is deployed to provide scalability and resilience.
+			, providing scalability and resilience.
 			<br />
 			<br />
 			In my pursuit of continuous improvement, I actively explore new
@@ -162,21 +163,21 @@ function ProjectRealWorld() {
 			. This pipeline automates code quality checks and enforces a stringent
 			code coverage policy. It encompasses various types of tests, including{" "}
 			<Link
-				href="https://github.com/kenyipp/realworld-nodejs-example-app/tree/master/packages/core/test"
+				href="https://github.com/kenyipp/realworld-nodejs-example-app/tree/develop/packages/core/tests"
 				target="_blank"
 			>
 				unit tests
 			</Link>
 			,{" "}
 			<Link
-				href="https://github.com/kenyipp/realworld-nodejs-example-app/tree/master/apps/server/test/integration"
+				href="https://github.com/kenyipp/realworld-nodejs-example-app/tree/develop/apps/article/tests"
 				target="_blank"
 			>
 				integration tests
 			</Link>
 			,{" "}
 			<Link
-				href="https://github.com/kenyipp/realworld-nodejs-example-app/tree/master/test/integration"
+				href="https://github.com/kenyipp/realworld-nodejs-example-app/tree/develop/tests/integration"
 				target="_blank"
 			>
 				end-to-end tests

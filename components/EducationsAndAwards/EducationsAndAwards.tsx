@@ -74,31 +74,47 @@ export function EducationsAndAwards() {
 				</Box>
 				<Box>
 					<PageSubtitle title="Awards" />
-					<List
-						component={Stack}
-						direction={isLargeScreenOrAbove ? "row" : "column"}
-					>
-						<ListItem>
-							<ListItemIcon>
-								<Avatar alt="Amazon Web Services" src="/amazon.jpg" />
-							</ListItemIcon>
-							<ListItemText
-								primary="AWS Certified Solutions Architect - Associate"
-								secondary="Amazon Web Services"
-							/>
-						</ListItem>
-						<ListItem>
-							<ListItemIcon>
-								<Avatar
-									alt="Stanford University of Business"
-									src="/stanford.jpg"
-								/>
-							</ListItemIcon>
-							<ListItemText
-								primary="Go-to-market Boot Camp certificate, Entrepreneur"
-								secondary="Stanford University of Business"
-							/>
-						</ListItem>
+					<List component="div">
+						<Stack direction="column" spacing={2} width="100%">
+							<Stack
+								spacing={2}
+								width="100%"
+								direction={isLargeScreenOrAbove ? "row" : "column"}
+							>
+								<ListItem>
+									<ListItemIcon>
+										<Avatar alt="Amazon Web Services" src="/amazon.jpg" />
+									</ListItemIcon>
+									<ListItemText
+										primary="AWS Certified Solutions Architect - Associate"
+										secondary="Amazon Web Services"
+									/>
+								</ListItem>
+								<ListItem>
+									<ListItemIcon>
+										<Avatar alt="Oracle" src="/oracle.png" />
+									</ListItemIcon>
+									<ListItemText
+										primary="Oracle Cloud Infrastructure 2024 Certified Foundations Associate"
+										secondary="Oracle"
+									/>
+								</ListItem>
+							</Stack>
+							<Stack direction="row" spacing={2} width="100%">
+								<ListItem>
+									<ListItemIcon>
+										<Avatar
+											alt="Stanford University of Business"
+											src="/stanford.jpg"
+										/>
+									</ListItemIcon>
+									<ListItemText
+										primary="Go-to-market Boot Camp certificate, Entrepreneur"
+										secondary="Stanford University of Business"
+									/>
+								</ListItem>
+							</Stack>
+						</Stack>
 					</List>
 				</Box>
 			</Stack>

@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import moment from "moment";
 
 import { PageSection } from "../PageSection";
 
@@ -10,19 +11,20 @@ export function AboutMe() {
 					I am a Full Stack Developer @ Mogo Finance Technology Inc.
 				</Typography>
 				<br />
-				With nearly 7 years of experience as a seasoned full-stack developer, I
-				have consistently crafted resilient, scalable, and optimized systems by
-				employing clean, maintainable, and testable code. have consistently
-				developed robust, scalable, and efficient systems using clean,
-				maintainable, and testable code.
+				I'm a Full Stack Developer with{" "}
+				{moment().diff(moment().year(2017), "year")} years of experience
+				building high-performance, scalable applications, especially in
+				e-commerce and fintech. I'm passionate about AWS CDK and love using it
+				to design event-driven architectures with serverless and managed
+				services like Lambda, SQS, and DynamoDB.
 				<br />
 				<br />
-				My greatest strength lies in delivering high-quality code along with
-				well-written test cases in a timely manner.
+				I’m passionate about writing clean, efficient code with strong test
+				coverage to ensure top-notch performance and scalability while keeping
+				costs down.
 				<br />
-				<br />I am highly motivated to continue learning and exploring new
-				technologies to enhance my skills and knowledge, ensuring that I stay
-				up-to-date with the latest industry trends and best practices.
+				<br />I thrive in fast-paced environments and love tackling challenges
+				with a focus on innovation and user-centric solutions.
 			</Box>
 		</PageSection>
 	);
